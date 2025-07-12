@@ -13,17 +13,24 @@ const employee = {
   },
 };
 
-console.log("Employee Name: " + employees.name);
+employee.name = "John Doe";
+employee.age = 18;
+employee.address.states = "123 Main Street";
+employee.address.city = "Citiville";
+employee.address.states = "Stateville";
+employee.address.country = "Countryland";
+employee.address.postalCode = "12345"; 
+
+console.log("Employee Name: " + employee.name);
 console.log("Employee Age: " + employee.age);
-console.log(
-  "Employee Address: " +
+console.log("Employee Address: " +
     employee.address.street +
     ", " +
     employee.address.city +
     ", " +
-    employee.address.state +
+    employee.address.states +
     ", " +
     employee.address.country +
     " " +
-    employee.adress.postalCode
+    employee.address.postalCode
 );
